@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Untitled</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "react": "https://ga.system.jspm.io/npm:react@18.0.0-alpha-edfe50510-20210823/dev.index.js",
+        "react-dom": "https://ga.system.jspm.io/npm:react-dom@18.0.0-alpha-edfe50510-20210823/dev.index.js",
+        "semantic-ui-react": "https://ga.system.jspm.io/npm:semantic-ui-react@2.0.3/dist/commonjs/dev.index.js"
+      },
+      "scopes": {
+        "https://ga.system.jspm.io/": {
+          "@babel/runtime/helpers/assertThisInitialized": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/assertThisInitialized.js",
+          "@babel/runtime/helpers/createClass": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/createClass.js",
+          "@babel/runtime/helpers/extends": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/extends.js",
+          "@babel/runtime/helpers/inheritsLoose": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/inheritsLoose.js",
+          "@babel/runtime/helpers/interopRequireDefault": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/interopRequireDefault.js",
+          "@babel/runtime/helpers/interopRequireWildcard": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/interopRequireWildcard.js",
+          "@babel/runtime/helpers/objectWithoutPropertiesLoose": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/objectWithoutPropertiesLoose.js",
+          "@babel/runtime/helpers/typeof": "https://ga.system.jspm.io/npm:@babel/runtime@7.15.3/helpers/esm/typeof.js",
+          "@fluentui/react-component-event-listener": "https://ga.system.jspm.io/npm:@fluentui/react-component-event-listener@0.51.7/dist/commonjs/dev.index.js",
+          "@fluentui/react-component-ref": "https://ga.system.jspm.io/npm:@fluentui/react-component-ref@0.51.7/dist/commonjs/dev.index.js",
+          "@popperjs/core": "https://ga.system.jspm.io/npm:@popperjs/core@2.9.3/dist/cjs/dev.popper.js",
+          "@semantic-ui-react/event-stack": "https://ga.system.jspm.io/npm:@semantic-ui-react/event-stack@3.1.2/lib/dev.index.js",
+          "clsx": "https://ga.system.jspm.io/npm:clsx@1.1.1/dist/clsx.js",
+          "exenv": "https://ga.system.jspm.io/npm:exenv@1.2.2/index.js",
+          "keyboard-key": "https://ga.system.jspm.io/npm:keyboard-key@1.1.0/src/keyboardKey.js",
+          "lodash/clamp": "https://ga.system.jspm.io/npm:lodash@4.17.21/clamp.js",
+          "lodash/compact": "https://ga.system.jspm.io/npm:lodash@4.17.21/compact.js",
+          "lodash/deburr": "https://ga.system.jspm.io/npm:lodash@4.17.21/deburr.js",
+          "lodash/difference": "https://ga.system.jspm.io/npm:lodash@4.17.21/difference.js",
+          "lodash/dropRight": "https://ga.system.jspm.io/npm:lodash@4.17.21/dropRight.js",
+          "lodash/each": "https://ga.system.jspm.io/npm:lodash@4.17.21/each.js",
+          "lodash/escapeRegExp": "https://ga.system.jspm.io/npm:lodash@4.17.21/escapeRegExp.js",
+          "lodash/every": "https://ga.system.jspm.io/npm:lodash@4.17.21/every.js",
+          "lodash/filter": "https://ga.system.jspm.io/npm:lodash@4.17.21/filter.js",
+          "lodash/find": "https://ga.system.jspm.io/npm:lodash@4.17.21/find.js",
+          "lodash/findIndex": "https://ga.system.jspm.io/npm:lodash@4.17.21/findIndex.js",
+          "lodash/first": "https://ga.system.jspm.io/npm:lodash@4.17.21/first.js",
+          "lodash/forEach": "https://ga.system.jspm.io/npm:lodash@4.17.21/forEach.js",
+          "lodash/get": "https://ga.system.jspm.io/npm:lodash@4.17.21/get.js",
+          "lodash/has": "https://ga.system.jspm.io/npm:lodash@4.17.21/has.js",
+          "lodash/inRange": "https://ga.system.jspm.io/npm:lodash@4.17.21/inRange.js",
+          "lodash/includes": "https://ga.system.jspm.io/npm:lodash@4.17.21/includes.js",
+          "lodash/intersection": "https://ga.system.jspm.io/npm:lodash@4.17.21/intersection.js",
+          "lodash/invert": "https://ga.system.jspm.io/npm:lodash@4.17.21/invert.js",
+          "lodash/invoke": "https://ga.system.jspm.io/npm:lodash@4.17.21/invoke.js",
+          "lodash/isArray": "https://ga.system.jspm.io/npm:lodash@4.17.21/isArray.js",
+          "lodash/isBoolean": "https://ga.system.jspm.io/npm:lodash@4.17.21/isBoolean.js",
+          "lodash/isEmpty": "https://ga.system.jspm.io/npm:lodash@4.17.21/isEmpty.js",
+          "lodash/isEqual": "https://ga.system.jspm.io/npm:lodash@4.17.21/isEqual.js",
+          "lodash/isFunction": "https://ga.system.jspm.io/npm:lodash@4.17.21/isFunction.js",
+          "lodash/isNil": "https://ga.system.jspm.io/npm:lodash@4.17.21/isNil.js",
+          "lodash/isNumber": "https://ga.system.jspm.io/npm:lodash@4.17.21/isNumber.js",
+          "lodash/isObject": "https://ga.system.jspm.io/npm:lodash@4.17.21/isObject.js",
+          "lodash/isPlainObject": "https://ga.system.jspm.io/npm:lodash@4.17.21/isPlainObject.js",
+          "lodash/isString": "https://ga.system.jspm.io/npm:lodash@4.17.21/isString.js",
+          "lodash/isUndefined": "https://ga.system.jspm.io/npm:lodash@4.17.21/isUndefined.js",
+          "lodash/keyBy": "https://ga.system.jspm.io/npm:lodash@4.17.21/keyBy.js",
+          "lodash/keys": "https://ga.system.jspm.io/npm:lodash@4.17.21/keys.js",
+          "lodash/map": "https://ga.system.jspm.io/npm:lodash@4.17.21/map.js",
+          "lodash/mapValues": "https://ga.system.jspm.io/npm:lodash@4.17.21/mapValues.js",
+          "lodash/memoize": "https://ga.system.jspm.io/npm:lodash@4.17.21/memoize.js",
+          "lodash/min": "https://ga.system.jspm.io/npm:lodash@4.17.21/min.js",
+          "lodash/noop": "https://ga.system.jspm.io/npm:lodash@4.17.21/noop.js",
+          "lodash/partialRight": "https://ga.system.jspm.io/npm:lodash@4.17.21/partialRight.js",
+          "lodash/pick": "https://ga.system.jspm.io/npm:lodash@4.17.21/pick.js",
+          "lodash/pickBy": "https://ga.system.jspm.io/npm:lodash@4.17.21/pickBy.js",
+          "lodash/range": "https://ga.system.jspm.io/npm:lodash@4.17.21/range.js",
+          "lodash/reduce": "https://ga.system.jspm.io/npm:lodash@4.17.21/reduce.js",
+          "lodash/round": "https://ga.system.jspm.io/npm:lodash@4.17.21/round.js",
+          "lodash/set": "https://ga.system.jspm.io/npm:lodash@4.17.21/set.js",
+          "lodash/size": "https://ga.system.jspm.io/npm:lodash@4.17.21/size.js",
+          "lodash/some": "https://ga.system.jspm.io/npm:lodash@4.17.21/some.js",
+          "lodash/sortBy": "https://ga.system.jspm.io/npm:lodash@4.17.21/sortBy.js",
+          "lodash/startCase": "https://ga.system.jspm.io/npm:lodash@4.17.21/startCase.js",
+          "lodash/startsWith": "https://ga.system.jspm.io/npm:lodash@4.17.21/startsWith.js",
+          "lodash/sum": "https://ga.system.jspm.io/npm:lodash@4.17.21/sum.js",
+          "lodash/take": "https://ga.system.jspm.io/npm:lodash@4.17.21/take.js",
+          "lodash/times": "https://ga.system.jspm.io/npm:lodash@4.17.21/times.js",
+          "lodash/transform": "https://ga.system.jspm.io/npm:lodash@4.17.21/transform.js",
+          "lodash/trim": "https://ga.system.jspm.io/npm:lodash@4.17.21/trim.js",
+          "lodash/union": "https://ga.system.jspm.io/npm:lodash@4.17.21/union.js",
+          "lodash/uniq": "https://ga.system.jspm.io/npm:lodash@4.17.21/uniq.js",
+          "lodash/values": "https://ga.system.jspm.io/npm:lodash@4.17.21/values.js",
+          "lodash/without": "https://ga.system.jspm.io/npm:lodash@4.17.21/without.js",
+          "object-assign": "https://ga.system.jspm.io/npm:object-assign@4.1.1/index.js",
+          "process": "https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.8/nodelibs/browser/process.js",
+          "prop-types": "https://ga.system.jspm.io/npm:prop-types@15.7.2/dev.index.js",
+          "react": "https://ga.system.jspm.io/npm:react@17.0.2/dev.index.js",
+          "react-dom": "https://ga.system.jspm.io/npm:react-dom@17.0.2/dev.index.js",
+          "react-fast-compare": "https://ga.system.jspm.io/npm:react-fast-compare@3.2.0/index.js",
+          "react-is": "https://ga.system.jspm.io/npm:react-is@17.0.2/dev.index.js",
+          "react-popper": "https://ga.system.jspm.io/npm:react-popper@2.2.5/lib/cjs/index.js",
+          "scheduler": "https://ga.system.jspm.io/npm:scheduler@0.21.0-alpha-edfe50510-20210823/dev.index.js",
+          "scheduler/tracing": "https://ga.system.jspm.io/npm:scheduler@0.20.2/dev.tracing.js",
+          "shallowequal": "https://ga.system.jspm.io/npm:shallowequal@1.1.0/index.js",
+          "warning": "https://ga.system.jspm.io/npm:warning@4.0.3/dev.warning.js"
+        },
+        "https://ga.system.jspm.io/npm:@fluentui/react-component-ref@0.51.7/": {
+          "react-is": "https://ga.system.jspm.io/npm:react-is@16.13.1/dev.index.js"
+        },
+        "https://ga.system.jspm.io/npm:prop-types@15.7.2/": {
+          "react-is": "https://ga.system.jspm.io/npm:react-is@16.13.1/dev.index.js"
+        },
+        "https://ga.system.jspm.io/npm:react-dom@17.0.2/": {
+          "scheduler": "https://ga.system.jspm.io/npm:scheduler@0.20.2/dev.index.js"
+        }
+      }
+    }
+    </script>
+  
+  <!-- SystemJS: Supports loading modules performantly in all browsers back to IE11 (depending on library support) -->
+  <script src="https://ga.system.jspm.io/npm:systemjs@6.10.1/dist/s.min.js"></script>
+  
+  <!-- Uncomment SystemJS Babel below for an in-browser ES Module / TypeScript / JSX dev workflow. -->
+  <script src="https://ga.system.jspm.io/npm:systemjs-babel@0.3.1/dist/systemjs-babel.js"></script> 
+  
+  <script type="systemjs-module" src="./index.jsx"></script>
+  
+  <!-- Load an app.js file written in the "system" module format output (via RollupJS / Babel / TypeScript) -->
+  <!-- <script type="systemjs-module" src="app.js"></script> -->
+
+  <div id="root"></div>
+
+</body>
+</html>
